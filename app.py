@@ -8,8 +8,8 @@ from tensorflow.keras.preprocessing.image import img_to_array
 
 
 # Cấu hình customtkinter
-ctk.set_appearance_mode("Light")  # Giao diện hệ thống (Light/Dark)
-ctk.set_default_color_theme("blue")  # Màu chủ đạo
+ctk.set_appearance_mode("Light")
+ctk.set_default_color_theme("blue")
 
 # Tạo cửa sổ chính
 window = ctk.CTk()
@@ -150,7 +150,7 @@ button_size = {
     'font': ("Arial", 20, "bold")
 }
 
-button1 = ctk.CTkButton(button_frame, text="ĐƯA ẢNH VÀO ĐỂ NHẬN DIỆN", 
+button1 = ctk.CTkButton(button_frame, text="ĐƯA FILE VÀO ĐỂ NHẬN DIỆN", 
                         command=UploadAction, **button_size)
 button1.pack(pady=10)
 
